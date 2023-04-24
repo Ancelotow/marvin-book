@@ -1,1 +1,1 @@
-flutter run --flavor dev
+flutter run --debug --flavor dev

@@ -1,1 +1,1 @@
-flutter run --flavor prod
+flutter run --debug --flavor prod

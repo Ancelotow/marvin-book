@@ -1,1 +1,1 @@
-flutter run --flavor preprod
+flutter run --debug --flavor preprod

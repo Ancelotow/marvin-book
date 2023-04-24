@@ -53,10 +53,27 @@ android {
         versionName flutterVersionName
     }
 
+    flavorDimensions "default"
+
+    productFlavors {
+        dev {
+            dimension "default"
+            resValue "string", "app_name", "Marvin Book Dev"
+            applicationIdSuffix ".dev"
+        }
+        preprod {
+            dimension "default"
+            resValue "string", "app_name", "Marvin Book Preprod"
+            applicationIdSuffix ".preprod"
+        }
+        prod {
+            dimension "default"
+            resValue "string", "app_name", "Marvin Book"
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
     }
